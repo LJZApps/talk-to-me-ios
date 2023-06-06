@@ -8,12 +8,24 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State private var showingCredits = false
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
+        VStack(alignment: .center) {
+            Image(systemName: "heart")
                 .imageScale(.large)
                 .foregroundColor(.accentColor)
-            Text("Hello, world!")
+            Text("Willkommen bei Talk to me!")
+                .font(.title)
+            Text("Deine sichere Social Media.")
+                .font(.headline)
+            
+            Button("Anmelden") {
+                
+            }
+            Button("Registrieren") {
+                
+            }
         }
         .padding()
     }
